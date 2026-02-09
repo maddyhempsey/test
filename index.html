@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Virksomhed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">MinVirksomhed</a>
+            <button class="nav-toggle" aria-label="Åbn menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <a href="#services">Ydelser</a>
+                <a href="#about">Om os</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Vi hjælper din virksomhed med at vokse</h1>
+            <p>Professionelle løsninger tilpasset dine behov. Vi leverer kvalitet, pålidelighed og resultater.</p>
+            <a href="#contact" class="btn">Kontakt os i dag</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Vores ydelser</h2>
+            <p class="section-subtitle">Vi tilbyder en bred vifte af professionelle tjenester</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">&#9881;</div>
+                    <h3>Rådgivning</h3>
+                    <p>Strategisk rådgivning der hjælper din virksomhed med at nå sine mål og udnytte sit fulde potentiale.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">&#9998;</div>
+                    <h3>Design</h3>
+                    <p>Kreativt design der kommunikerer dit brand tydeligt og professionelt til dine kunder.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">&#128187;</div>
+                    <h3>Udvikling</h3>
+                    <p>Moderne tekniske løsninger der gør din dagligdag nemmere og din forretning mere effektiv.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">&#128200;</div>
+                    <h3>Marketing</h3>
+                    <p>Målrettet markedsføring der bringer din virksomhed foran de rigtige kunder på de rigtige tidspunkter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Om os</h2>
+                    <p>Vi er et dedikeret team af fagfolk med mange års erfaring. Siden vores grundlæggelse har vi hjulpet hundredvis af virksomheder med at opnå deres mål.</p>
+                    <p>Vores tilgang er altid personlig og tilpasset den enkelte kunde. Vi tror på langvarige partnerskaber baseret på tillid, gennemsigtighed og resultater.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Kunder</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Års erfaring</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Tilfredse kunder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Mød vores team</h2>
+            <p class="section-subtitle">Dedikerede fagfolk der brænder for at levere resultater</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">AL</div>
+                    <h3>Anna Larsen</h3>
+                    <p class="team-role">Direktør</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">MN</div>
+                    <h3>Mikkel Nielsen</h3>
+                    <p class="team-role">Projektleder</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">SJ</div>
+                    <h3>Sofie Jensen</h3>
+                    <p class="team-role">Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Kontakt os</h2>
+            <p class="section-subtitle">Vi vil gerne høre fra dig</p>
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Navn</label>
+                        <input type="text" id="name" name="name" required placeholder="Dit fulde navn">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="din@email.dk">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Besked</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Skriv din besked her..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send besked</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Adresse</strong>
+                        <p>Vestergade 12, 3. sal<br>1456 København K</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Telefon</strong>
+                        <p>+45 12 34 56 78</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>E-mail</strong>
+                        <p>info@minvirksomhed.dk</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Åbningstider</strong>
+                        <p>Man-Fre: 09:00 - 17:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">MinVirksomhed</a>
+                    <p>Professionelle løsninger til moderne virksomheder.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Ydelser</a>
+                    <a href="#about">Om os</a>
+                    <a href="#team">Team</a>
+                    <a href="#contact">Kontakt</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MinVirksomhed. Alle rettigheder forbeholdes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

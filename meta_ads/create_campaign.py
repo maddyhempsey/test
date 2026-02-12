@@ -268,10 +268,34 @@ def main():
         action="store_true",
         help="Vis detaljerede fejlbeskeder fra API",
     )
+    parser.add_argument(
+        "--refresh-token",
+        action="store_true",
+        help="Udveksl nuværende token til en langlivet token (~60 dage)",
+    )
     args = parser.parse_args()
 
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
+
+    if args.refresh_token:
+        from .token_manager import exchange_for_long_lived_token
+        try:
+            result = exchange_for_long_lived_token()
+            new_token = result["access_token"]
+            days = result.get("expires_in", 0) // 86400
+            print(f"\nNy langlivet token (udløber om {days} dage):\n")
+            print(new_token)
+            print(
+                "\nSæt den som environment variable:\n"
+                f"  export META_ACCESS_TOKEN={new_token}\n"
+                "\nEller på Windows:\n"
+                f"  set META_ACCESS_TOKEN={new_token}"
+            )
+        except (ValueError, RuntimeError) as e:
+            logger.error("%s", e)
+            sys.exit(1)
+        sys.exit(0)
 
     if args.interactive:
         config_data = interactive_mode()

@@ -104,6 +104,25 @@ class MetaAPIClient:
                     time.sleep(wait)
                     continue
 
+                # Udløbet eller ugyldig token - giv klar besked
+                if code == 190:
+                    if subcode == 463:
+                        msg = (
+                            f"Din access token er udløbet. {msg}\n"
+                            "  → Kør: python -m meta_ads --refresh-token\n"
+                            "  → Eller generer en ny token i Meta Business Suite."
+                        )
+                    elif subcode == 460:
+                        msg = (
+                            f"Din access token har ændret password. {msg}\n"
+                            "  → Generer en ny token i Meta Business Suite."
+                        )
+                    else:
+                        msg = (
+                            f"Ugyldig access token. {msg}\n"
+                            "  → Tjek at META_ACCESS_TOKEN er korrekt sat."
+                        )
+
                 raise MetaAPIError(msg, error_code=code, error_subcode=subcode)
 
             except URLError as e:

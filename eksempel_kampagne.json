@@ -19,7 +19,7 @@
         {
           "type": "link",
           "name": "Forårskampagne - Billede 1",
-          "page_id": "DIN_PAGE_ID_HER",
+          "page_id": "100709018781575",
           "message": "Få professionel rådgivning til din virksomhed. Vi hjælper dig med at vækste! 🚀",
           "link": "https://minvirksomhed.dk",
           "headline": "Professionel Rådgivning",
@@ -42,7 +42,7 @@
         {
           "type": "link",
           "name": "Forårskampagne - Skandinavien",
-          "page_id": "DIN_PAGE_ID_HER",
+          "page_id": "100709018781575",
           "message": "Vi tilbyder design, udvikling og marketing til virksomheder i hele Skandinavien.",
           "link": "https://minvirksomhed.dk/services",
           "headline": "Design & Udvikling",
@@ -53,7 +53,7 @@
         {
           "type": "carousel",
           "name": "Services Karrusel",
-          "page_id": "DIN_PAGE_ID_HER",
+          "page_id": "100709018781575",
           "message": "Se vores ydelser - vi har noget for enhver virksomhed.",
           "link": "https://minvirksomhed.dk/services",
           "cards": [

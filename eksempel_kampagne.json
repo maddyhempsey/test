@@ -1,0 +1,84 @@
+{
+  "campaign": {
+    "name": "MinVirksomhed - Forårskampagne 2026",
+    "objective": "OUTCOME_TRAFFIC",
+    "status": "PAUSED"
+  },
+  "ad_sets": [
+    {
+      "name": "Danmark - 25-45 år",
+      "daily_budget_cents": 10000,
+      "targeting": {
+        "countries": ["DK"],
+        "age_min": 25,
+        "age_max": 45,
+        "locales": [10]
+      },
+      "optimization_goal": "LINK_CLICKS",
+      "creatives": [
+        {
+          "type": "link",
+          "name": "Forårskampagne - Billede 1",
+          "page_id": "DIN_PAGE_ID_HER",
+          "message": "Få professionel rådgivning til din virksomhed. Vi hjælper dig med at vækste! 🚀",
+          "link": "https://minvirksomhed.dk",
+          "headline": "Professionel Rådgivning",
+          "description": "Mere end 150 tilfredse kunder. Kontakt os i dag.",
+          "image_url": "https://minvirksomhed.dk/billeder/kampagne-foraar.jpg",
+          "call_to_action_type": "LEARN_MORE"
+        }
+      ]
+    },
+    {
+      "name": "Skandinavien - 30-55 år",
+      "daily_budget_cents": 15000,
+      "targeting": {
+        "countries": ["DK", "SE", "NO"],
+        "age_min": 30,
+        "age_max": 55
+      },
+      "optimization_goal": "LANDING_PAGE_VIEWS",
+      "creatives": [
+        {
+          "type": "link",
+          "name": "Forårskampagne - Skandinavien",
+          "page_id": "DIN_PAGE_ID_HER",
+          "message": "Vi tilbyder design, udvikling og marketing til virksomheder i hele Skandinavien.",
+          "link": "https://minvirksomhed.dk/services",
+          "headline": "Design & Udvikling",
+          "description": "10+ års erfaring. 98% kundetilfredshed.",
+          "image_url": "https://minvirksomhed.dk/billeder/services.jpg",
+          "call_to_action_type": "SIGN_UP"
+        },
+        {
+          "type": "carousel",
+          "name": "Services Karrusel",
+          "page_id": "DIN_PAGE_ID_HER",
+          "message": "Se vores ydelser - vi har noget for enhver virksomhed.",
+          "link": "https://minvirksomhed.dk/services",
+          "cards": [
+            {
+              "link": "https://minvirksomhed.dk/raadgivning",
+              "name": "Rådgivning",
+              "description": "Strategisk rådgivning til din forretning",
+              "picture": "https://minvirksomhed.dk/billeder/raadgivning.jpg"
+            },
+            {
+              "link": "https://minvirksomhed.dk/design",
+              "name": "Design",
+              "description": "Kreativt design der skiller sig ud",
+              "picture": "https://minvirksomhed.dk/billeder/design.jpg"
+            },
+            {
+              "link": "https://minvirksomhed.dk/udvikling",
+              "name": "Udvikling",
+              "description": "Moderne webløsninger der virker",
+              "picture": "https://minvirksomhed.dk/billeder/udvikling.jpg"
+            }
+          ],
+          "call_to_action_type": "LEARN_MORE"
+        }
+      ]
+    }
+  ]
+}

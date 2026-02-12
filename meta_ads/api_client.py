@@ -83,10 +83,20 @@ class MetaAPIClient:
                     msg = error_info.get("message", str(e))
                     code = error_info.get("code")
                     subcode = error_info.get("error_subcode")
+                    error_type = error_info.get("type", "")
+                    fbtrace = error_info.get("fbtrace_id", "")
                 except (json.JSONDecodeError, KeyError):
                     msg = str(e)
                     code = None
                     subcode = None
+                    error_type = ""
+                    fbtrace = ""
+
+                logger.debug(
+                    "API fejl detaljer - Type: %s, Kode: %s, Subkode: %s, "
+                    "Besked: %s, FBTrace: %s",
+                    error_type, code, subcode, msg, fbtrace,
+                )
 
                 if e.code == 429 and attempt < retries - 1:
                     wait = 2 ** (attempt + 1)

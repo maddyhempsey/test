@@ -263,7 +263,15 @@ def main():
         action="store_true",
         help="Vis konfiguration uden at oprette noget",
     )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Vis detaljerede fejlbeskeder fra API",
+    )
     args = parser.parse_args()
+
+    if args.verbose:
+        logging.getLogger().setLevel(logging.DEBUG)
 
     if args.interactive:
         config_data = interactive_mode()
